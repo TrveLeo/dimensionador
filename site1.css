@@ -1,0 +1,41 @@
+body {
+    background: rgb(122, 122, 255);
+    font: normal 13pt verdana;
+    text-align: center;
+    color: black;
+}
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+background: white;
+border-radius: 10px;
+padding:15px;
+width: 500px;
+text-align: center;
+margin: auto;
+}
+
+div {
+    text-align: center;
+
+}
+.botao01 {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(231, 231, 231);
+
+}
+.botao02 {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(231, 231, 231);
+}
+
+footer {
+    padding: auto;
+    text-align: center;
+    font: 20px italic Arial;
+}

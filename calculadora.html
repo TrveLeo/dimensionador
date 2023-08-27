@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora1.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de seção: Corrente</h1>
+    </header>
+    <section>
+        <div>
+            <p>Digite o valor da corrente:</p>
+            
+            <p>
+                <input type="number" name='valor'id="valor">
+            </p>
+
+        <div>
+            <p><button type="button" onclick="corrente()">Enviar</button></p>
+        </div>
+        </div>
+        <div id="res">
+        
+        </div>
+        <div id="imagem"></div>
+
+        <script>
+            var valor = window.document.getElementById("valor");
+            var res = window.document.getElementById("res");
+            var imagem = window.document.getElementById("imagem");
+            var img = window.document.createElement('img')
+            img.setAttribute('src', 'casa.png')
+            function corrente(){
+                if (Number(valor.value) == 0){
+
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'ta errado isso aí'
+                }
+                else if (Number(valor.value) >0 && Number(valor.value)<=9) {
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'A seção ideal é de 0,5mm'
+                }
+                else if (Number(valor.value) >9 && Number(valor.value)<=11) {
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'A seção ideal é de 0,75mm'
+                }
+                else if (Number(valor.value) >11 && Number(valor.value)<=14) {
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'A seção ideal é de 1mm'
+                }
+                else if (Number(valor.value) >14 && Number(valor.value)<=17.5) {
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'A seção ideal é de 1,5mm'
+                }
+                else if (Number(valor.value) >17.5 && Number(valor.value)<=24) {
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'A seção ideal é de 2,5mm'
+                }
+                else if (Number(valor.value) >24 && Number(valor.value)<=32) {
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'A seção ideal é de 4mm'
+                }
+                else if (Number(valor.value) >32 && Number(valor.value)<=41) {
+                    res.style.textAlign = "center"
+                    res.innerHTML = 'A seção ideal é de 6mm'
+                }
+                else if (Number(valor.value) >41) {
+                    imagem.style.textAlign = "center"
+                    imagem.appendChild(img)
+                }
+            }
+
+        
+        </script>
+
+    </section>
+    <footer>&copy;Leandro de bobeira
+    </footer>
+</body>
+</html>
